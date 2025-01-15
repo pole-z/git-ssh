@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo 'git-ssh() {
+echo 'function git-ssh() {
     if [ ! -f ".git/config" ]; then
         echo "git 未初始化"
         return 1
