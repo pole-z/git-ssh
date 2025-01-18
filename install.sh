@@ -6,6 +6,7 @@ echo 'function git-ssh() {
         return 1
     fi
     git config --local core.sshCommand "ssh -i $1"
+    ssh-add $1
 }' >> ~/.bashrc
 source ~/.bashrc
 
